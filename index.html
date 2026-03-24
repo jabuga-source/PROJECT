@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 1rem 10%;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo { font-weight: bold; font-size: 1.5rem; color: #38bdf8; }
+
+        .nav-links { list-style: none; display: flex; }
+
+        .nav-links li { margin-left: 20px; }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #f8fafc;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover { color: #38bdf8; }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+
+        .hero p { font-size: 1.2rem; color: #94a3b8; max-width: 600px; }
+
+        /* Sections */
+        section { padding: 100px 10%; }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            border-left: 5px solid #38bdf8;
+            padding-left: 15px;
+        }
+
+        /* Project Cards */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .card h3 { color: #38bdf8; margin-bottom: 10px; }
+
+        /* Contact Section */
+        .contact { text-align: center; }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">PORTFOLIO</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Hi, I'm <span style="color: #38bdf8;">Your Name</span></h1>
+        <p>A passionate developer building sleek digital experiences.</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I specialize in creating clean, functional, and user-friendly websites. I enjoy solving complex problems and turning ideas into reality through code. My core stack includes HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="card">
+                <h3>Project One</h3>
+                <p>A brief description of your amazing project and the technologies you used to build it.</p>
+            </div>
+            <div class="card">
+                <h3>Project Two</h3>
+                <p>A brief description of your amazing project and the technologies you used to build it.</p>
+            </div>
+            <div class="card">
+                <h3>Project Three</h3>
+                <p>A brief description of your amazing project and the technologies you used to build it.</p>
+            </div>
