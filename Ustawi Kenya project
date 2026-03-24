@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USTAWI Kenya | Excellence & Growth</title>
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --dark-gold: #996515;
+            --black: #0a0a0a;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--black);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* The Watermark Overlay */
+        body::before {
+            content: "USTAWI KENYA";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 4rem;
+            font-weight: bold;
+            color: rgba(212, 175, 55, 0.05); /* Very faint gold */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            transform: rotate(-25deg) scale(1.5);
+            pointer-events: none;
+            z-index: 0;
+            white-space: nowrap;
+        }
+
+        /* Main Container with Gold Outline */
+        .container {
+            position: relative;
+            z-index: 1;
+            padding: 3rem;
+            border: 2px solid var(--gold);
+            border-image: linear-gradient(to bottom right, var(--gold), var(--dark-gold), var(--gold)) 1;
+            background: rgba(10, 10, 10, 0.8);
+            text-align: center;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 5px;
+            margin-bottom: 0.5rem;
+            color: var(--gold);
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            color: #ccc;
+        }
+
+        .line {
+            height: 1px;
+            background: var(--gold);
+            width: 50%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>USTAWI</h1>
+        <p>KENYA</p>
+        <div class="line"></div>
+        <p style="font-size: 0.9rem; font-style: italic;">Empowering Communities. Sustaining Futures.</p>
+    </div>
+
+</body>
+</html>
